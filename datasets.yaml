@@ -19,6 +19,14 @@
         - 'wang04m_interspeech.pdf/2'
 
 - vars:
+    query: "What are the formats and components of DeviceID?"
+  assert:
+    - type: contains-all
+      value:
+        - 'ECMA-269_9th_edition_december_2011.pdf/167'
+        - 'Device Identifier'
+
+- vars:
     query: "What is the purpose of Clear Connection service?"
   assert:
     - type: contains
@@ -31,6 +39,7 @@
       value: 
         - 'ECMA-269_9th_edition_december_2011.pdf/264'
         - 'ECMA-323_6th_edition_december_2011.pdf/181'
+        - 'ECMA-285_4th_edition_december_2011.pdf/447'
 
 - vars:
     query: "List the Call Control Events"
@@ -69,6 +78,33 @@
       value: 
         - 'ECMA-269_9th_edition_december_2011.pdf'
         - 'Make Call'
+
+- vars:
+    query: "How do you start and stop a monitor on a device?"
+  assert:
+    - type: contains-all
+      value: 
+        - 'ECMA-269_9th_edition_december_2011.pdf/82'
+        - 'Monitor Start'
+        - 'Monitor Stop'
+
+- vars:
+    query: "How do Snapshot Call and Snapshot Device services work?"
+  assert:
+    - type: contains-all
+      value: 
+        - 'ECMA-269_9th_edition_december_2011.pdf/245'
+        - 'ECMA-269_9th_edition_december_2011.pdf/248'
+        - 'Snapshot Device'
+        - 'Snapshot Call'
+
+- vars:
+    query: "How does single-step transfer differ from consultation transfer?"
+  assert:
+    - type: contains-all
+      value: 
+        - 'ECMA-269_9th_edition_december_2011.pdf/353'
+        - 'Single Step Transfer Call'
 
 - vars:
     query: "Show me an xml example of Established event!"

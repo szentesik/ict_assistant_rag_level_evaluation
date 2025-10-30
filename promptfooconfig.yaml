@@ -21,7 +21,4 @@ prompts:
 tests:
   file://datasets.yaml
 
-commandLineOptions:
-  maxConcurrency: 1
-
 outputPath: 'output/latest_results.html'
