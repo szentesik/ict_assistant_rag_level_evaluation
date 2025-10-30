@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "ICT Assistant RAG evaluator"
+
+providers:
+  - id: http
+    config:
+      url: ' http://localhost:3000/api/retrieve'
+      method: 'POST'
+      headers:
+        'Content-Type': 'application/json'
+      body:
+        query: '{{prompt}}'
+      transformResponse: 'json.error ? `ERROR: ${json.error}` : json.map(guide => `${guide.filename}/${guide.page}: ${guide.content}`).join("\n")'
+
+prompts:
+  - '{{ query }}'
+
+tests:
+  file://datasets.yaml
+
+commandLineOptions:
+  maxConcurrency: 1
+
+outputPath: 'output/latest_results.html'

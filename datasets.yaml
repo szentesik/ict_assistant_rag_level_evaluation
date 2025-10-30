@@ -1,0 +1,136 @@
+- vars:
+    query: "Which standards defines CSTA?"
+  assert:
+    - type: contains-all
+      value:
+        - 'wang04m_interspeech.pdf/1'
+        - 'ECMA-269_9th_edition_december_2011.pdf'
+        - 'TR-087.pdf/13'
+        - 'ECMA-269'
+        - 'ECMA-323'
+
+- vars:
+    query: "What is a connection in CSTA?"
+  assert:
+    - type: contains-all
+      value:
+        - 'ECMA-269_9th_edition_december_2011.pdf/65'
+        - 'TR-087.pdf/25'
+        - 'wang04m_interspeech.pdf/2'
+
+- vars:
+    query: "What is the purpose of Clear Connection service?"
+  assert:
+    - type: contains
+      value: 'ECMA-269_9th_edition_december_2011.pdf/277'
+
+- vars:
+    query: "Which parameters has the Answer Call service?"
+  assert:
+    - type: contains-all
+      value: 
+        - 'ECMA-269_9th_edition_december_2011.pdf/264'
+        - 'ECMA-323_6th_edition_december_2011.pdf/181'
+
+- vars:
+    query: "List the Call Control Events"
+  assert:    
+    - type: icontains-all
+      value: 
+        - 'ECMA-269_9th_edition_december_2011.pdf/361'
+        - 'Initiated'
+        - 'Originated'
+        - 'Delivered'
+        - 'Established'
+        - 'Connection Cleared'
+        - 'Held'
+        - 'Retrieved'
+        - 'Conferenced'
+        - 'Diverted'
+
+- vars:
+    query: "List the possible system statuses reported by the PBX"
+  assert:    
+    - type: contains-any
+      value: 
+        - 'ECMA-269_9th_edition_december_2011.pdf/81'
+        - 'ECMA-269_9th_edition_december_2011.pdf/761'
+
+- vars:
+    query: "What is the purpose of Clear Connection service?"
+  assert:
+    - type: contains
+      value: 'ECMA-269_9th_edition_december_2011.pdf/277'
+
+- vars:
+    query: "How to make a basic call?"
+  assert:
+    - type: contains-all
+      value: 
+        - 'ECMA-269_9th_edition_december_2011.pdf'
+        - 'Make Call'
+
+- vars:
+    query: "Show me an xml example of Established event!"
+  assert:
+    - type: contains-any
+      value: 
+        - 'ECMA-323_6th_edition_december_2011.pdf/215'
+        - 'TR-087.pdf/84'
+
+- vars:
+    query: "Show me an ASN.1 example of Consultation Call request!"
+  assert:
+    - type: contains
+      value: 'ECMA-285_4th_edition_december_2011.pdf/176'
+
+- vars:
+    query: "How to implement CSTA-XML via TCP socket?"
+  assert:
+    - type: contains
+      value: 'ECMA-323_6th_edition_december_2011.pdf/635'
+
+- vars:
+    query: "How to implement speech services in my application?"
+  assert:
+    - type: contains
+      value: 'wang04m_interspeech.pdf'
+
+- vars:
+    query: "What is uaCSTA?"
+  assert:
+    - type: contains
+      value: 'TR-087.pdf/14'
+
+- vars:
+    query: "How to establish a CSTA Application Session?"
+  assert:
+    - type: contains
+      value: 'TR-087.pdf/18'
+
+- vars:
+    query: "How to control a SIP phone?"
+  assert:
+    - type: contains
+      value: 'TR-087.pdf/15'
+
+- vars:
+    query: "What is an event flow during an outgoing call?"
+  assert:
+    - type: contains
+      value: 'TR-087.pdf/26'
+
+- vars:
+    query: "How to mute the speaker of the phone?"
+  assert:
+    - type: contains-all
+      value:
+        - 'ECMA-269_9th_edition_december_2011.pdf/527' 
+        - 'TR-087.pdf/46'
+        - 'Set Speaker Mute'
+
+- vars:
+    query: "What is the capital of Assyria?"
+  assert:
+    - type: starts-with
+      value: 'ERROR:'
