@@ -13,11 +13,10 @@ This project provides a document retrieval evaluation framework for an Informati
 
 ## Requirements
 
-- Python (recommended: 3.8+)
-- Node.js (for installing Promptfoo CLI)
+- **Node.js** (v20 or higher recommended)
+- **npm** or **yarn** package manager
 - [Promptfoo](https://promptfoo.dev) (`npm install -g promptfoo`)
 - A running retrieval API endpoint (`http://localhost:3000/api/retrieve` by default)
-- YAML support
 
 ---
 
