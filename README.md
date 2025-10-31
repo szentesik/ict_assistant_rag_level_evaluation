@@ -93,14 +93,4 @@ promptfoo eval --output output/results-$(Get-Date -Format "yyyyMMdd_hhmmss").htm
 ## References
 
 - [Promptfoo Documentation](https://promptfoo.dev/docs/)
-- [CSTA Standard Overview (Wikipedia)](https://en.wikipedia.org/wiki/Computer-supported_telecommunications_applications)
-
----
-
-## License
-
-MIT (or your preferred license here)
-
----
-
-Let me know if you want any customizations for your organizational needs or a sample badge for build status/results!
+- [CSTA Standard Overview ](https://ecma-international.org/computer-supported-telecommunications-applications-csta/)
